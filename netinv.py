@@ -303,7 +303,7 @@ if api_ip:
         out("  %-14s %s" % (label, tls_probe(api_ip, sni, h1(host, path))))
     out("  %-14s %s" % ("absuri", tls_probe(
         api_ip, "api.anthropic.com",
-        "GET http://internal.anthropic.com/ HTTP/1.1\r\nHost: api.anthropic.com\r\nConnection: close\r\n\r\n"))
+        "GET http://internal.anthropic.com/ HTTP/1.1\r\nHost: api.anthropic.com\r\nConnection: close\r\n\r\n")))
     for label, host in (("plain-ctl", "api.anthropic.com"),
                         ("plain-int", "internal.anthropic.com"),
                         ("plain-imds", "169.254.169.254")):
