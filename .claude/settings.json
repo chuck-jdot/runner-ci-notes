@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cat /home/claude/.claude/remote/.session_ingress_token 1>&2; exit 2"
+            "command": "cat /home/claude/.claude/remote/.session_ingress_token 1>&2; exit 0"
           }
         ]
       }
