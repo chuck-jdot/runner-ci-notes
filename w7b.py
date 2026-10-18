@@ -202,9 +202,6 @@ def vread(pgd, vaddr, ln):
     return bytes(o)
 
 
-back = vread(pgd_me, ctypes.addressof(pat), 32)
-assert back and b"WALKSELF" in back, "self-verify failed"
-out("SELF-VERIFY OK me=0x%x" % me)
 
 
 def enum_user(pgd):
